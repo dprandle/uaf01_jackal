@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro" name="uaf01_jackal">
+
+<xacro:include filename="$(find uaf01_jackal)/urdf/jackal_bumblebee.urdf" />
+<xacro:include filename="$(find uaf01_jackal)/urdf/jackal_gx4.urdf" /> 
+
+</robot>

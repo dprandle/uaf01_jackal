@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<robot name="jackal_bumblebee">
+	<joint name="bumblebee_mesh" type="fixed">
+		<parent link="front_mount"/>
+		<child link="jackal_bumblebee"/>
+		<origin xyz="0.06 0 0" rpy="0.0 0.0 0.0"/>
+	</joint>
+
+	<link name="jackal_bumblebee">
+		<visual>
+			<geometry>
+				<mesh filename="package://uaf01_jackal/meshes/jackal_bumblebee.STL"/>
+			</geometry>
+			<material name="black">
+				<color rgba="0.6 0.6 0.6 1"/>
+			</material>
+		</visual>
+	</link>
+	
+	<joint name="top_mount_to_bumblebee" type="fixed">
+        <parent link="front_mount"/>
+        <child link="bumblebee"/>
+        <origin xyz="0.08 0 0.072" rpy="0.0 0.0 0.0"/>
+    </joint>
+	
+	<link name="bumblebee" />
+
+</robot>

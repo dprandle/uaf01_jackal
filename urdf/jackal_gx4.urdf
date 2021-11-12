@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+<robot name="jackal_microstrain">
+        <joint name="chassis_link_to_jackal_gx4_imu" type="fixed">
+                <parent link="chassis_link"/>
+                <child link="gx4_45_imu_link"/>
+                <origin xyz="-0.120 0.100 0.180" rpy="0.0 0.0 0.0"/>
+        </joint>
+	
+	<link name="gx4_45_imu_link" />
+
+        <joint name="chassis_link_to_jackal_gx4_gps" type="fixed">
+                <parent link="chassis_link"/>
+                <child link="gx4_45_gps_link"/>
+                <origin xyz="-0.170 -0.180 0.300" rpy="0.0 0.0 0.0"/>
+        </joint>
+
+	<link name="gx4_45_gps_link" />
+
+</robot>
+
